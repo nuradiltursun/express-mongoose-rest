@@ -1,0 +1,27 @@
+GET  http://localhost:5050/users
+
+###
+GET  http://localhost:5050/users/5df250c679b01e8a8413dcae
+
+###
+POST http://localhost:5050/users
+Content-Type: application/json
+
+{
+    "name" : "nuradil00",
+    "email" : "demo@gmail.com",
+    "addr" : "makit"
+}
+
+###
+DELETE  http://localhost:5050/users/5df250c679b01e8a8413dcae
+
+###
+PATCH   http://localhost:5050/users/5df2545b71a2b100a447c1bf
+Content-Type: application/json
+
+{
+    "name" : "updatename",
+    "email" : "updated@gmail.com",
+    "addr" : "updatedaddr"
+}
